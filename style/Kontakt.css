@@ -1,0 +1,123 @@
+img {
+	width: 200;
+	height: 100;
+	border: 0;
+	float: right;	
+}
+
+body {
+	background-color:#000000;
+}
+
+#header{
+	width: 100%;
+	height: 1px;
+	margin-top:10%;
+	margin-bottom:20px;
+}
+
+fieldset{
+	border: 0px;
+}
+
+form{
+    text-align: center;
+}
+
+input[type="text"]{
+	font-size:20px;
+	padding: 15px 15px 15px 60px;
+}
+input[type="email"]{
+	font-size:20px;
+	padding: 15px 15px 15px 60px;
+}
+input[type="tel"]{
+	font-size:20px;
+	padding: 15px 15px 15px 60px;
+}
+
+
+/*input[type="submit"]{
+	margin-top:20px;
+	font-size:20px;
+	padding:5px;
+	border-radius:6px;
+} */
+
+#name{
+	background: url(../graphic/icons/user.png) no-repeat 12px 12px #fff;
+	border-radius:6px 6px 0px 0px;
+}
+
+#mail{
+	background: url(../graphic/icons/mail.png) no-repeat 12px 12px #fff;
+}
+
+#number{
+	background: url(../graphic/icons/phone.png) no-repeat 12px 12px #fff;
+}
+
+#message{
+	background: url(../graphic/icons/pencil.png) no-repeat 12px 12px #fff;
+	border-radius:0px 0px 6px 6px;
+	overflow: auto; /* es sollte eigentlich scrollbar sein */
+}
+
+/*
+#message{
+	background: url(../graphic/icons/pencil.png) no-repeat 5% 15% #fff;
+	border-radius:0% 0% 4% 4%;
+	font-size: 130%;
+	padding: 3% 3.7%; 
+	font-family: Arial;
+	text-align: left-side;
+}
+	Habe die Skalierung nicht durchblickt, das Feld macht Random was es will und ist in verschiedenen Browsern unterschiedlich dargestellt */
+
+
+input[type="submit"]{
+  position: relative;
+  margin-top:20px;
+  right:50%;
+  float:right;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #2c3e50;
+  border: 0;
+  border-radius:6px;
+  border-bottom: 2px solid #22303f;
+  -webkit-box-shadow: inset 0 -2px #22303f;
+  box-shadow: inset 0 -2px #22303f;
+}
+input[type="submit"] :hoover {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+footer {
+	position:absolute;
+    bottom: 5%;
+    width: 99%;
+    height: 2em;
+	color: white;
+}
+
+a {
+	color: white;
+	}
+
+td {
+	color: white;
+}

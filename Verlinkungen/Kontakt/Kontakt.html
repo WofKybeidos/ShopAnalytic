@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kontakt Shopalytics</title>
+		<meta name="description" content="Contact from Shopalytics Webapplication"/>
+		<meta name="language" content="de"/>
+		<meta name="keywords" content="Contact Shopalytics Online Shopping"/>
+		<meta name="author" content="Shopayltics-Team"/>
+		<link rel="stylesheet" type="text/css" href="../../style/Kontakt.css"/>
+	</head>
+
+	<header>
+		<h2>Kontaktformular</h2>
+		<a href="../../Login.html"><img src="../../graphic/logos/Shopanalytics.png"></a>
+	</header>
+
+	<body>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<?php include("Kontakt.php"); ?>
+
+		<form method="post" name="Kontakt">
+			<fieldset>
+				<input type="text" name="name" id="name" placeholder="Ihr Name" value="" 
+				autofocus autocomplete="on" autocorrect="off" required> 
+				<br/>
+				<input type="email" name="e-mail" id="mail" placeholder="Ihre E-Mail Adresse" value= "" 
+				autocomplete="on" autocorrect="off" required>
+				<br/>
+				<input type="tel" name="number" id="number" placeholder="Ihre Telefonnummer" value= "" 
+				autocomplete="on" autocorrect="off" required>
+				<br/>
+				<input type="text" name="name" id="message" placeholder="Ihre Nachricht" value="" > 
+				<!-- <textarea name="message" id="message" placeholder="Ihre Nachricht" value= ""></textarea> -->
+				<br/>
+				<input type="submit" id="submit" title="Abschicken" value="Abschicken" disabled="disabled"/>
+			</fieldset>
+		</form>
+	</body>
+	
+	<footer>
+		Zurück zur Startseite: <a href="../../Login.html">Hier klicken</a>
+	</footer>
+</html>
