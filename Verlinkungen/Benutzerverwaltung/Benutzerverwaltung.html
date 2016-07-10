@@ -18,11 +18,6 @@
 	<body>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<?php include("Benutzerverwaltung.php"); ?>
 
 		<form method="post" name="Benutzerverwaltung">
@@ -40,7 +35,26 @@
 						Passwort Bestätigen: <input name="PwBestätigen" id="bPw" placeholder="">
 					</label>
 				<br/>
-				<input type="submit" id="change" title="Passwort ändern" value="Speichern" disabled="disabled"/>
+				<input type="submit" id="changePw" title="Passwort ändern" value="Passwort Speichern" disabled="disabled"/>
+				</br>
+			</fieldset>
+		<br>
+		<br>
+		<fieldset>
+				<legend>E-Mail Adresse ändern</legend>
+					<label for="AktuellesE-Mail">
+						Aktuelle E-Mail Adresse: <input name="AktuelleE-mail" id="aE-Mail" placeholder="">
+					</label>
+					</br>
+					<label for="NeueE-Mail">
+						Neue E-Mail Adresse: <input name="NeueE-Mail" id="nE-Mail" placeholder="">
+					</label>
+					</br>
+					<label for="E-MailBestätigen">
+						E-Mail Adresse Bestätigen: <input name="E-MailBestätigen" id="bE-Mail" placeholder="">
+					</label>
+				<br/>
+				<input type="submit" id="changeE-mail" title="E-Mail ändern" value="E-Mail Speichern" disabled="disabled"/>
 				</br>
 			</fieldset>
 		</form>
