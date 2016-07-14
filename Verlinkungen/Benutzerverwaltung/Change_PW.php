@@ -16,15 +16,15 @@ if(isset($_GET['changePW'])) {
 	}
 	
 	if(!$error) {
-		$stmt = $pdo->prepare("SELECT * FROM user.users WHERE mail = :mail");
+		$stmt = $pdo->prepare("SELECT * FROM user.users WHERE email = :mail");
 		$result = $stmt->execute(array('mail' => $email));
 		$user = $stmt->fetch();
 		}	
 	}
 	if ($user !== false && hash('sha256',$password) == $user['password'] && !error) {
 		$password_hash = hash('sha256', $passwordNew);
-		$statement = $pdo->prepare("INSERT INTO user.users (password) VALUES (:password_hash)");
-		$result = $statement->execute('password_hash' => $password_hash);
+		$stmt = $pdo->prepare("INSERT INTO user.users (password) VALUES (:password_hash)");
+		$result = $stmt->execute(array('password_hash' => $password_hash));
 		
 		if($result) {		
 			echo 'Passwort erfolgreich geändert';
