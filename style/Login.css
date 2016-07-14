@@ -84,8 +84,10 @@ a {
 
 footer {
 	position:absolute;
-    bottom: 5%;
+    bottom: 2%;
     width: 99%;
     height: 2em;
-	color: color;
+	background: #000000;
+	border-top:2px white;
+	 /* Eigentlich müsste ein weißer Rahmen erscheinen.. warum wird der nicht angezeigt?*/
 }
