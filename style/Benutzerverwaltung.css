@@ -28,7 +28,7 @@ a {
 fieldset {
 	background: #00000;
 	padding: 10px;
-	width: 30%; 
+	width: 30%;
 }
 
 legend {
@@ -39,9 +39,10 @@ legend {
 
 label {
 	display: block;
-	margin-bottom: .2em;
+	margin: .2em;
 	position: relative;
 	color: white;
+	border: 2px solid #000000;
 	
 }
 input:not([type]) {

@@ -79,15 +79,14 @@ input[type="submit"] :hoover {
   box-shadow: none;
 }
 a {
-	color: white;
+	color: #FFFFFF;
 }
 
 footer {
 	position:absolute;
-    bottom: 2%;
+    bottom: 0%;
     width: 99%;
     height: 2em;
-	background: #000000;
-	border-top:2px white;
-	 /* Eigentlich müsste ein weißer Rahmen erscheinen.. warum wird der nicht angezeigt?*/
+	background: #036;
+	text-align: center;
 }
