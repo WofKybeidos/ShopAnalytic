@@ -16,50 +16,39 @@
 	</header>
 
 	<body>
-		<br>
-		<br>
 		<?php include("Benutzerverwaltung.php"); ?>
 
-		<form method="post" name="Benutzerverwaltung">
+		<form method="post" name="NewPassword" action="?changePW=1">
 			<fieldset>
 				<legend>Passwort ändern</legend>
 					<label for="AktuellesPw">
-						Aktuelles Passwort: <input name="AktuellesPw" id="aPw" placeholder="">
+						Aktuelles Passwort: <input name="password" id="aPw" placeholder="">
 					</label>
-					</br>
 					<label for="NeuesPw">
-						Neues Passwort: <input name="NeuesPw" id="nPw" placeholder="">
+						Neues Passwort: <input name="passwordNew" id="nPw" placeholder="">
 					</label>
-					</br>
 					<label for="PwBestätigen">
-						Passwort Bestätigen: <input name="PwBestätigen" id="bPw" placeholder="">
+						Passwort Bestätigen: <input name="passwordNew2" id="bPw" placeholder="">
 					</label>
-				<br/>
-				<input type="submit" id="changePw" title="Passwort ändern" value="Passwort Speichern" disabled="disabled"/>
-				</br>
+				<input type="submit" id="changePw" title="Passwort ändern" value="Passwort Speichern"/>
 			</fieldset>
-		<br>
-		<br>
-		<fieldset>
+		</form>
+		<form method="post" name="NewMail" action="?changeMail=1">
+			<fieldset>
 				<legend>E-Mail Adresse ändern</legend>
 					<label for="AktuellesE-Mail">
-						Aktuelle E-Mail Adresse: <input name="AktuelleE-mail" id="aE-Mail" placeholder="">
+						Aktuelle E-Mail Adresse: <input name="mail" id="aE-Mail" placeholder="">
 					</label>
-					</br>
 					<label for="AktuellesPw">
-						Aktuelles Passwort: <input name="AktuellesPw" id="aPw" placeholder="">
+						Aktuelles Passwort: <input name="password" id="aPw" placeholder="">
 					</label>
-					</br>
 					<label for="NeueE-Mail">
-						Neue E-Mail Adresse: <input name="NeueE-Mail" id="nE-Mail" placeholder="">
+						Neue E-Mail Adresse: <input name="mailNew" id="nE-Mail" placeholder="">
 					</label>
-					</br>
 					<label for="E-MailBestätigen">
-						E-Mail Adresse Bestätigen: <input name="E-MailBestätigen" id="bE-Mail" placeholder="">
+						E-Mail Adresse Bestätigen: <input name="mailNew2" id="bE-Mail" placeholder="">
 					</label>
-				<br/>
-				<input type="submit" id="changeE-mail" title="E-Mail ändern" value="E-Mail Speichern" disabled="disabled"/>
-				</br>
+				<input type="submit" id="changeE-mail" title="E-Mail ändern" value="E-Mail Speichern"/>
 			</fieldset>
 		</form>
 	</body>

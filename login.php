@@ -14,6 +14,7 @@ if(isset($_GET['login'])) {
 	//Überprüfung des Passworts
 	if ($user !== false && hash('sha256',$password) == $user['password']) {
 		$_SESSION['userid'] = $user['id'];
+		$_SESSION['mail'] = $email['mail'];
 		die('Login erfolgreich. Weiter zu <a href="geheim.php">internen Bereich</a>');
 	} else {
 		$errorMessage = "E-Mail oder Passwort war ungültig<br>";
