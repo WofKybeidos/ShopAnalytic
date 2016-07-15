@@ -57,6 +57,5 @@
 	</body>
 	
 	<footer>
-		Zur&uuml;ck zur Startseite: <a href="../../Login.html">Hier klicken</a>
 	</footer>
 </html>
