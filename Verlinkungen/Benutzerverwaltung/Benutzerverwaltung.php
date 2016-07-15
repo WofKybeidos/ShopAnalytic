@@ -29,8 +29,8 @@
 					<label for="NeuesPw">
 						Neues Passwort: <input type="password" name="passwordNew" id="nPw" placeholder="">
 					</label>
-					<label for="PwBestaetigen">
-						Passwort Bestaetigen: <input type="password" name="passwordNew2" id="bPw" placeholder="">
+					<label for="PwBest&auml;tigen">
+						Passwort Best&auml;tigen: <input type="password" name="passwordNew2" id="bPw" placeholder="">
 					</label>
 						<input type="submit" id="changePw" title="Speichern" value="Speichern"/>
 			</fieldset>
@@ -45,8 +45,8 @@
 					<label for="NeueE-Mail">
 						Neue E-Mail Adresse: <input type="email" name="mailNew" id="nE-Mail" placeholder="">
 					</label>
-					<label for="E-MailBestaetigen">
-						E-Mail Adresse Bestaetigen: <input name="mailNew2" id="bE-Mail" placeholder="">
+					<label for="E-MailBest&auml;tigen">
+						E-Mail Adresse Best&auml;tigen: <input name="mailNew2" id="bE-Mail" placeholder="">
 					</label>
 					<label for="AktuellesPw">
 						Aktuelles Passwort: <input type="password" name="password" id="aPw" placeholder="">

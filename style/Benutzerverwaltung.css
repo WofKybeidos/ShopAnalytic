@@ -42,21 +42,20 @@ label {
 	margin: .2em;
 	position: relative;
 	color: white;
-	border: 2px solid #000000;
+	border: 4px solid #000000;
 	
 }
-input:not([type]) {
+input {
 	left: 14em;
 	position: absolute;
 	top: -.1em;
 }
 
-/* Bitte hier den Button anpassen, das aktuelle CSS positioniert den Button so das er für mich nicht sichtbar ist*/
-/* input[type="submit"]{
+input[type="submit"]{
   position: relative;
   margin-top:2px;
   right:90%;
-  width: 150px;
+  width: 110px;
   height: 50px;
   font-size: 15px;
   color: white;
@@ -68,7 +67,8 @@ input:not([type]) {
   border-bottom: 2px solid #22303f;
   -webkit-box-shadow: inset 0 -2px #22303f;
   box-shadow: inset 0 -2px #22303f;
-} */
+  /*Button müsste jetzt wieder sichbar sein... allerdings lässt er sich nicht links anheften. Evtl so lassen oder noch mal abändern -> ich wüsste nicht wie */
+}
 
 
 footer {
