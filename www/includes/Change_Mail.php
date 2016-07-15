@@ -1,7 +1,6 @@
 <?php 
 
-$pdo = new PDO('mysql:host=localhost;dbname=user', 'root', '');
-$showFormular = true; 
+include( __DIR__ . 'htdocs/ShopAnalytic/config.php');
 
 if(isset($_GET['changeMail'])) {
 	$error = false;
@@ -47,3 +46,5 @@ if(isset($_GET['changeMail'])) {
 			}
 	}
 }	
+
+?>

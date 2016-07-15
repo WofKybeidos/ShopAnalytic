@@ -1,5 +1,5 @@
-<?php include("Change_PW.php"); 
-	include("Change_Mail.php");
+<?php include(__DIR__ . '\includes\Change_PW.php');
+	 include(__DIR__ . '\includes\Change_Mail.php');
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +10,8 @@
 		<meta name="language" content="de"/>
 		<meta name="keywords" content="User Management Shopalytics Online Shopping"/>
 		<meta name="author" content="Shopayltics-Team"/>
-		<link rel="stylesheet" type="text/css" href="../../style/Benutzerverwaltung.css"/>
-		<link rel="stylesheet" type="text/css" href="../../style/General.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/Benutzerverwaltung.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/General.css"/>
 	</head>
 
 	<header>
@@ -29,8 +29,8 @@
 					<label for="NeuesPw">
 						Neues Passwort: <input type="password" name="passwordNew" id="nPw" placeholder="">
 					</label>
-					<label for="PwBest&auml;tigen">
-						Passwort Best&auml;tigen: <input type="password" name="passwordNew2" id="bPw" placeholder="">
+					<label for="PwBestaetigen">
+						Passwort Bestaetigen: <input type="password" name="passwordNew2" id="bPw" placeholder="">
 					</label>
 						<input type="submit" id="changePw" title="Speichern" value="Speichern"/>
 			</fieldset>
@@ -45,8 +45,8 @@
 					<label for="NeueE-Mail">
 						Neue E-Mail Adresse: <input type="email" name="emailNew" id="nE-Mail" placeholder="">
 					</label>
-					<label for="E-MailBest&auml;tigen">
-						E-Mail Adresse Best&auml;tigen: <input type="email" name="emailNew2" id="bE-Mail" placeholder="">
+					<label for="E-MailBestaetigen">
+						E-Mail Adresse Bestaetigen: <input name="emailNew2" id="bE-Mail" placeholder="">
 					</label>
 					<label for="AktuellesPw">
 						Aktuelles Passwort: <input type="password" name="password" id="aPw" placeholder="">

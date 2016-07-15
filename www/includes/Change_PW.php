@@ -1,7 +1,6 @@
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=user', 'root', '');
-$showFormular = true; 
+include( __DIR__ . 'htdocs\ShopAnalytic\config.php');
 
 if(isset($_GET['changePW'])) {
 	$error = false;
@@ -38,3 +37,5 @@ if(isset($_GET['changePW'])) {
 			}
 	}
 }	
+
+?>

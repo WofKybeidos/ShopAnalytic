@@ -1,4 +1,4 @@
-<?php include("Regestrierung2.php"); ?>
+<?php include(__DIR__ . '\includes\Regestrierung.php'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
 		<meta name="language" content="de"/>
 		<meta name="keywords" content="Sign Up Shopalytics Online Shopping"/>
 		<meta name="author" content="Shopayltics-Team"/>
-		<link rel="stylesheet" type="text/css" href="../../style/Registrieren.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/Registrieren.css"/>
 	</head>	
 	
 	<header>

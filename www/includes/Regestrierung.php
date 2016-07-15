@@ -1,7 +1,6 @@
 <?php 
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=user', 'root', '');
-$showFormular = true; 
+include("config.php");
 
 if(isset($_GET['register'])) {
 	$error = false;
@@ -22,7 +21,7 @@ if(isset($_GET['register'])) {
 	}
 	
 	if(!$error) {
-		$stmt = $pdo->prepare("SELECT * FROM user WHERE email = :email");
+		$stmt = $pdo->prepare("SELECT * FROM user.users WHERE email = :email");
 		$result = $stmt->execute(array('email' => $email));
 		$user = $stmt->fetch();
 			
@@ -34,7 +33,7 @@ if(isset($_GET['register'])) {
 	
 	if(!$error) {	
 		$password_hash = hash('sha256', $password);
-		$statement = $pdo->prepare("INSERT INTO user (email, password, firstname, lastname) VALUES (:email, :password_hash, :firstname, :lastname)");
+		$statement = $pdo->prepare("INSERT INTO user.users (email, password, firstname, lastname) VALUES (:email, :password_hash, :firstname, :lastname)");
 		$result = $statement->execute(array('email' => $email, 'password_hash' => $password_hash, 'firstname' => $firstname, 'lastname' => $lastname));
 		
 		if($result) {		
@@ -45,3 +44,4 @@ if(isset($_GET['register'])) {
 		} 
 	} 
 }
+?>
