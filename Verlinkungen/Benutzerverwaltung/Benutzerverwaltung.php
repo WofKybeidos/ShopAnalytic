@@ -1,4 +1,6 @@
-<?php include("Change_PW.php"); ?>
+<?php include("Change_PW.php"); 
+	include("Change_Mail.php");
+?>
 
 <!DOCTYPE html>
 <html>
