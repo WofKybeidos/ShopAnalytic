@@ -20,7 +20,7 @@
 			
 		<form method="post" name="login" action="?login=1">
 			<fieldset>
-				<input type="text" name="username" id="username" placeholder="Benutzername" value="" 
+				<input type="email" name="email" id="username" placeholder="Benutzername" value="" 
 				autofocus autocomplete="on" autocorrect="off" required>  
 				<br/>
 				<input type="password" name="password" id="password" value="" placeholder="Passwort" autocomplete="on" autocorrect="off" required>

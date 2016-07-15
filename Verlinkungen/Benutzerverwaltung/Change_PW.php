@@ -8,7 +8,9 @@ if(isset($_GET['changePW'])) {
 	$password = $_POST['password'];
 	$passwordNew = $_POST['passwordNew'];
 	$passwordNew2 = $_POST['passwordNew2'];
+	$email = $_SESSION['email'];
 	
+	echo $email;
 
 	if($passwordNew != $passwordNew2) {
 		echo 'Die neuen Passwörter stimmen nicht überein<br>';
@@ -20,7 +22,7 @@ if(isset($_GET['changePW'])) {
 		$result = $stmt->execute(array('mail' => $email));
 		$user = $stmt->fetch();
 		}	
-	}
+		
 	if ($user !== false && hash('sha256',$password) == $user['password'] && !error) {
 		$password_hash = hash('sha256', $passwordNew);
 		$stmt = $pdo->prepare("INSERT INTO user.users (password) VALUES (:password_hash)");
