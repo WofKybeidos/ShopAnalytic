@@ -40,13 +40,13 @@
 			<fieldset>
 				<legend>E-Mail Adresse &auml;ndern</legend>
 					<label for="AktuelleE-Mail">
-						Aktuelle E-Mail Adresse: <input type="email" name="mail" id="aE-Mail" placeholder="">
+						Aktuelle E-Mail Adresse: <input type="email" name="email" id="aE-Mail" placeholder="">
 					</label>
 					<label for="NeueE-Mail">
-						Neue E-Mail Adresse: <input type="email" name="mailNew" id="nE-Mail" placeholder="">
+						Neue E-Mail Adresse: <input type="email" name="emailNew" id="nE-Mail" placeholder="">
 					</label>
 					<label for="E-MailBest&auml;tigen">
-						E-Mail Adresse Best&auml;tigen: <input name="mailNew2" id="bE-Mail" placeholder="">
+						E-Mail Adresse Best&auml;tigen: <input type="email" name="emailNew2" id="bE-Mail" placeholder="">
 					</label>
 					<label for="AktuellesPw">
 						Aktuelles Passwort: <input type="password" name="password" id="aPw" placeholder="">
