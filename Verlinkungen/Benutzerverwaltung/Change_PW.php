@@ -10,7 +10,6 @@ if(isset($_GET['changePW'])) {
 	$passwordNew2 = $_POST['passwordNew2'];
 	$email = $_SESSION['email'];
 	
-	echo $email;
 
 	if($passwordNew != $passwordNew2) {
 		echo 'Die neuen Passwörter stimmen nicht überein<br>';
@@ -22,17 +21,20 @@ if(isset($_GET['changePW'])) {
 		$result = $stmt->execute(array('mail' => $email));
 		$user = $stmt->fetch();
 		}	
-		
-	if ($user !== false && hash('sha256',$password) == $user['password'] && !error) {
-		$password_hash = hash('sha256', $passwordNew);
-		$stmt = $pdo->prepare("INSERT INTO user.users (password) VALUES (:password_hash)");
-		$result = $stmt->execute(array('password_hash' => $password_hash));
-		
-		if($result) {		
-			echo 'Passwort erfolgreich geändert';
-			$showFormular = false;
+	if ($error == false){	
+		if ($user !== false && hash('sha256',$password) == $user['password']) {
+			$password_hash = hash('sha256', $passwordNew);
+			$stmt = $pdo->prepare("UPDATE user.users SET password = :password_hash WHERE email = :mail");
+			$result = $stmt->execute(array('password_hash' => $password_hash, 'mail' => $email));
+			
+			if($result) {		
+				echo 'Passwort erfolgreich geändert';
+				$showFormular = false;
+			} else {
+				echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+			} 
 		} else {
-			echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
-		} 
-	} 
-}
+			echo 'Ihr aktuelles Passwort war nicht Korrekt';
+			}
+	}
+}	
