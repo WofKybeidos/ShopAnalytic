@@ -34,8 +34,8 @@
 	</body>
 	
 	<footer>
-		<a href="Verlinkungen/Impressum/Impressum.html">Impressum</a> | 
-		<a href="Verlinkungen/Datenschutz/Datenschutz.html">Datenschutzbestimmungen</a> | 
-		<a href="Verlinkungen/Kontakt/Kontakt.html">Kontakt</a>
+		<a href="../Verlinkungen/Impressum/Impressum.html">Impressum</a> | 
+		<a href="../Verlinkungen/Datenschutz/Datenschutz.html">Datenschutzbestimmungen</a> | 
+		<a href="../Verlinkungen/Kontakt/Kontakt.html">Kontakt</a>
 	</footer>
 </html>
