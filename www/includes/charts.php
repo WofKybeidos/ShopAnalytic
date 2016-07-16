@@ -1,20 +1,24 @@
 <?php
+	session_start();
 	include( __DIR__ . '\config.php');
 	try{
 		$userID = $_SESSION['userid'];
-		$result = $pdo->query('SELECT Category, Price FROM user.transaction WHERE userID = :ID_USERS');
+		$result = $pdo->query('SELECT Category, Price FROM user.transaction');
 		
 		$rows = array();
 		$table = array();
 		$table['cols'] = array(
 			array('label' => 'Kategorie', 'type' => 'string'),
-			array('label' => 'Ausgaben'. 'type' => 'number'));
+			array('label' => 'Ausgaben', 'type' => 'number'));
 			
-		foreach($result){
+		foreach((array)$result as $r){
 			$temp = array();
-			$temp[] = array('v' => (string) $result['Category']);
-			
-			$temp[] = array('v' => (int) $result['Price']);
+			if(isset($tmp['Category'])){
+				$temp[] = array('v' => (string) $r['Category']);
+			}
+			if(isset($tmp['Price'])){
+				$temp[] = array('v' => (int) $r['Price']);
+			}
 		}
 		
 		$table['rows'] = $rows;

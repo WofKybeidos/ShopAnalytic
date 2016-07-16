@@ -28,8 +28,6 @@
 	</header>
 	
 	<body>
-	
-		
 	</body>
 	<footer>
 		<a href="../Verlinkungen/Impressum.html">Impressum</a> | 
