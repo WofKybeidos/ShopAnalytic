@@ -25,11 +25,13 @@
 				<br/>
 				<input type="password" name="password" id="password" value="" placeholder="Passwort" autocomplete="on" autocorrect="off" required>
 				<br/>
+				<a href="Verlinkungen/Registrieren/Registrieren.php">
+				<input type="submit" id="new" class="login primary icon-confirm svg" title="Neuanmeldung" value="Registrieren" disabled="disabled"/>
+				</a>
 				<input type="submit" id="submit" class="login primary icon-confirm svg" title="Einloggen" value="Einloggen"/>
-				<!-- <input type="submit" id="new" class="login primary icon-confirm svg" title="Neuanmeldung" value="Registrieren" disabled="disabled"/> -->
 			</fieldset>
 		</form>
-		<!-- <a href="http://passwortvergessen.de/">Passwort vergessen?</a> Passwort vergessen fehlt noch -->
+		<a id = "PwVergessen" href="http://passwortvergessen.de/">Passwort vergessen?</a>
 	</body>
 	
 	<footer>
