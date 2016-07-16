@@ -1,26 +1,18 @@
 body {
 	background-color:#000000;
+	margin:0;
 }
 
-
 img {
-	width: 220px;
-    height: 150px;
-    position: absolute;
-    left: 43%;
-    top: 17%;
-	/* Bekomme es nicht hin, dass es im Header integriert ist, so passst es sich nicht dynamisch an und crasht die Optik beim Ändern der Seitengröße*/
+	width:250px;
+	margin: 0 auto;
+	float:middle;
+	display:block;
 }
 
 header{
-	/* background: url(../graphic/logos/Shopanalytics.png) no-repeat center; */
-	width: 100%;
-	height: 100px;
-	margin-top:10%;
-	margin-bottom:20px;
-	margin-left: auto;
-	margin-right: auto;
-
+	width:100%;
+	height:200px;
 }
 
 fieldset{
@@ -31,20 +23,13 @@ form{
     text-align: center;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
 	font-size:20px;
 	padding: 15px 15px 15px 60px;
 }
 
-/*input[type="submit"]{
-	margin-top:20px;
-	font-size:20px;
-	padding:5px;
-	border-radius:6px;
-} */
-
-#username{
+#email{
 	background: url(../graphic/icons/users.png) no-repeat 12px 12px #fff;
 	border-radius:6px 6px 0px 0px;
 }
@@ -54,11 +39,8 @@ input[type="password"] {
 	border-radius:0px 0px 6px 6px;
 }
 
-input[type="submit"]{
-  position:relative;
+.Button{
   margin-top:20px;
-  right:40%;
-  float:right;
   width: 150px;
   height: 50px;
   font-size: 20px;
@@ -72,12 +54,14 @@ input[type="submit"]{
   -webkit-box-shadow: inset 0 -2px #22303f;
   box-shadow: inset 0 -2px #22303f;
 }
+
 input[type="submit"] :hoover {
   top: 1px;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 a {
 	color: #FFFFFF;
 }
@@ -85,15 +69,17 @@ a {
 #PwVergessen
 {
 	color: #FFFFFF;
-	position: absolute;
-	left: 46%
+	display:block;
+	text-align:center;
+	margin:0 auto;
+	width: 250px;
 }
 
 footer {
+	bottom:0%;
 	position:absolute;
-    bottom: 0%;
-    width: 99%;
-    height: 2em;
+    width: 100%;
+    height: 2.5em;
 	background: #036;
 	text-align: center;
 }

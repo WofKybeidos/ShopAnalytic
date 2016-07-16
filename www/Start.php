@@ -20,21 +20,21 @@
 			
 		<form method="post" name="login" action="?login=1">
 			<fieldset>
-				<input type="email" name="email" id="username" placeholder="Benutzername" value="" 
-				autofocus autocomplete="on" autocorrect="off" required>  
+				<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" autocomplete="on" autocorrect="off" required>  
 				<br/>
-				<input type="password" name="password" id="password" value="" placeholder="Passwort" autocomplete="on" autocorrect="off" required>
+				<input type="password" name="password" id="password" placeholder="Passwort" autocomplete="on" autocorrect="off" required>
 				<br/>
-				<input type="submit" id="submit" class="login primary icon-confirm svg" title="Einloggen" value="Einloggen"/>
-				<!-- <input type="submit" id="new" class="login primary icon-confirm svg" title="Neuanmeldung" value="Registrieren" disabled="disabled"/> -->
+				<input type="submit" class="Button" title="Neuanmeldung" value="Registrieren"/>
+				</a>
+				<input type="submit" class="Button" title="Einloggen" value="Einloggen"/>
 			</fieldset>
 		</form>
-		<!-- <a href="http://passwortvergessen.de/">Passwort vergessen?</a> Passwort vergessen fehlt noch -->
+		<a id = "PwVergessen" href="http://passwortvergessen.de/">Passwort vergessen?</a>
 	</body>
 	
 	<footer>
-		<a href="../Verlinkungen/Impressum.html">Impressum</a> | 
-		<a href="../Verlinkungen/Datenschutz.html">Datenschutzbestimmungen</a> | 
-		<a href="../Verlinkungen/Kontakt.html">Kontakt</a>
+		<a href="Verlinkungen/Impressum/Impressum.html">Impressum</a> | 
+		<a href="Verlinkungen/Datenschutz/Datenschutz.html">Datenschutzbestimmungen</a> | 
+		<a href="Verlinkungen/Kontakt/Kontakt.html">Kontakt</a>
 	</footer>
 </html>
