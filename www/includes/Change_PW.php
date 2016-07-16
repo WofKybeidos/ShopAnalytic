@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include( __DIR__ . 'htdocs\ShopAnalytic\config.php');
+include( __DIR__ . '\config.php');
 
 if(isset($_GET['changePW'])) {
 	$error = false;

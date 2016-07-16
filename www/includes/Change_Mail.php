@@ -1,6 +1,6 @@
 <?php 
 
-include( __DIR__ . 'htdocs/ShopAnalytic/config.php');
+include( __DIR__ . '\config.php');
 
 if(isset($_GET['changeMail'])) {
 	$error = false;

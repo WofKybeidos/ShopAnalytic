@@ -1,6 +1,7 @@
 <?php 
 session_start();
-include("config.php");
+include( __DIR__ . '\config.php');
+
 
 if(isset($_GET['register'])) {
 	$error = false;
