@@ -1,40 +1,12 @@
-body {
-	background-color:#000000;
-}
-
-h2{
-	color: white;
-}
-
 h4{
-	color: white;
 	font-weight: bold;
 }
 
-p {
-	color: white;
-}
-
-a {
-	color: white;
-}
-
-td {
-	color: white;
-}
-
 #logo {
-	height: 150px;
 	width: 200px;
-	right:0%;
-	top:2%;
-	float: right;
+	display:inline-block;
+	float:right;
 }
-
-footer {
-	position:absolute;
-    bottom: 0%;
-    width: 99%;
-    height: 2em;
-	color: white;
+body{
+	text-align:center;
 }
