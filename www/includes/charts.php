@@ -1,30 +1,28 @@
 <?php
 	session_start();
-	include( __DIR__ . '\config.php');
-	try{
-		$userID = $_SESSION['userid'];
-		$result = $pdo->query('SELECT Category, Price FROM user.transaction');
-		
-		$rows = array();
-		$table = array();
-		$table['cols'] = array(
-			array('label' => 'Kategorie', 'type' => 'string'),
-			array('label' => 'Ausgaben', 'type' => 'number'));
-			
-		foreach((array)$result as $r){
-			$temp = array();
-			if(isset($tmp['Category'])){
-				$temp[] = array('v' => (string) $r['Category']);
-			}
-			if(isset($tmp['Price'])){
-				$temp[] = array('v' => (int) $r['Price']);
-			}
-		}
-		
-		$table['rows'] = $rows;
-		$jsonTable = json_encode($table);
+
+    $con=mysql_connect("localhost","root","");
+	$user= $_SESSION['userid'];
+	$sth = mysql_query("SELECT Price, Category FROM user.transaction");
+
+	$rows = array();
+	$table = array();
+	$table['cols'] = array(
+		array('label' => 'Category', 'type' => 'string'),
+		array('label' => 'Price', 'type' => 'number')
+	);
 	
-	} catch(PDOException $e){
-		echo 'ERROR: ' . $e ->getMessage();
+	$rows = array();
+	
+	while($r = mysql_fetch_assoc($sth)) {
+		$temp = array();
+		$temp[] = array('v' => (string) $r['Category']);    
+		$temp[] = array('v' => (int) $r['Price']);
+		$rows[] = array('c' => $temp);
 	}
+	
+	$table['rows'] = $rows;
+	$jsonTable = json_encode($table);
+	echo $jsonTable;
+
 ?>
