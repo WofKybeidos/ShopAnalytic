@@ -1,11 +1,12 @@
 header{
 	width: 100%;
 	height: 5em;
-	background: #036;
+	background: #000;
 	text-align: left;
 	color: white;
 }
 .icon{
+	padding-top:20px;
 	width:32px;
 	float:right;
 	margin-right:20px;
@@ -14,4 +15,16 @@ header{
 #welcome{
 	padding: 10px;
 	display:inline-block;
+}
+
+div#chart_div{
+	display:block;
+	width:800px;
+	margin: auto;
+}
+
+img#logo{
+	width:100px;
+	display:inline-block;
+	float:left;
 }
