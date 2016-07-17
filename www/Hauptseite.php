@@ -5,27 +5,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- für google Optimierte Such kriterien beachten -->
-		<title>Startseite Shopalytics</title>
+		<title>Shopalytics - Dashboard</title>
 		<meta name="description" content="Mainpage from Shopalytics Webapplication"/>
 		<meta name="language" content="de"/>
 		<meta name="keywords" content="Mainpage Shopalytics Online Shopping"/>
 		<meta name="author" content="Shopayltics-Team"/>
 		<link rel="stylesheet" type="text/css" href="../style/Hauptseite.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/General.css"/>
+		
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="DrawChart.js"></script>
 	</head>
 	
 	<header>
-		<br>Herlich Willkommen: <?php echo $user_check ?>
-		<a href="Benutzerverwaltung.php">
-			<img id = "user" src="../graphic/icons/user.png"/>
-		</a>
+		<div class="text">Herzlich Willkommen: <a href="Benutzerverwaltung.php"><?php echo $user_check ?></a></div>
+		
 		<a href="https://www.google.de/?gws_rd=ssl">
-			<img id = "logout" src="../graphic/icons/logout.png"/>
+			<img id = "logout" class="icon" src="../graphic/icons/logout.png" title="Logout"/>
 		</a>
-		<img id = "dashboard" src="../graphic/icons/dashboard.png"/>
+		<a href="Benutzerverwaltung.php">
+			<img id = "user" class="icon" src="../graphic/icons/user.png" title="Benutzerverwaltung"/>
+		</a>
+		<a>
+			<img id = "dashboard" class="icon" src="../graphic/icons/pie-chart.png" title="Dashboard"/>
+		</a>
+		
 		<img id = "logo" src="../graphic/logos/Shopanalytics.png">
 	</header>
 	

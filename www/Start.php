@@ -25,9 +25,8 @@
 				<br/>
 				<input type="password" name="password" id="password" placeholder="Passwort" autocomplete="on" autocorrect="off" required>
 				<br/>
-				<a href="Registrieren.php">
+				<a id = "Registrieren" href="Registrieren.php">
 					<input type="button" class="Button" title="Neuanmeldung" value="Registrieren"/>
-				</a>
 				</a>
 				<input type="submit" class="Button" title="Einloggen" value="Einloggen"/>
 			</fieldset>

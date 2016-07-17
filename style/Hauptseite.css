@@ -5,53 +5,8 @@ header{
 	text-align: left;
 	color: white;
 }
-#logout {
-width: 50px;
-height: 50px;
-position: absolute;
-right: 1%;
-}
-
-#user {
-width: 50px;
-height: 50px;
-position: absolute;
-right: 6%;
-}
-
-#dashboard {
-width: 70px;
-height: 50px;
-position: absolute;
-right: 11%;
-/* Fürs ausgrauen muss ja eine Aktion passieren, das schaue ich mir noch mal an, sobald du die Funktion eingebaut hast */
-}
-
-#logo {
-	width: 150px;
-    height: 80px;
-    position: absolute;
-	right: 48%;
-	top: 0%
-}
-
-
-body {
-	background-color:#000000;
-	margin:0;
-    padding:0;
-    height:100%;
-}
-
-p {
-	color: white;
-}
-
-footer {
-	position:absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 2em;
-	background: #036;
-	text-align: center;
+.icon{
+	width:32px;
+	float:right;
+	margin-right:20px;
 }
