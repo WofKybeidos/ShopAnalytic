@@ -13,7 +13,7 @@ if(isset($_GET['login'])) {
 	if ($user !== false && hash('sha256',$password) == $user['password']) {
 		$_SESSION['userid'] = $user['id'];
 		$_SESSION['email'] = $user['email'];
-		echo 'Wilkommen' . $email;
+		header("location: Hauptseite.php");
 	} else {
 		$errorMessage = "E-Mail oder Passwort war ungueltig<br>";
 	}

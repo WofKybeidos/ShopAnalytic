@@ -1,4 +1,6 @@
-<?php include(__DIR__ . '\includes\charts.php'); ?>
+<?php include(__DIR__ . '\includes\charts.php'); 
+		include( __DIR__ . '\includes\session.php');
+?>
 
 <!DOCTYPE html>
 <html>
@@ -16,7 +18,7 @@
 	</head>
 	
 	<header>
-		<br>Herlich Willkommen:
+		<br>Herlich Willkommen: <?php echo $user_check ?>
 		<a href="Benutzerverwaltung.php">
 			<img id = "user" src="../graphic/icons/user.png"/>
 		</a>
