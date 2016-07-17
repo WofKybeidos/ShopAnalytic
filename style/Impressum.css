@@ -8,6 +8,7 @@ h2{
 
 h4{
 	color: white;
+	font-weight: bold;
 }
 
 p {
@@ -22,7 +23,7 @@ td {
 	color: white;
 }
 
-img {
+#logo {
 	height: 150px;
 	width: 200px;
 	right:0%;
