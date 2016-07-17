@@ -11,6 +11,8 @@ function drawChart() {
 	var data = new google.visualization.DataTable(jsonData);
 		var options = {
 			title: 'Shop Auswertung',
+			titleTextStyle: {color: 'white'},
+			legend: { position: 'right', textStyle: { color: 'white' }},
 			backgroundColor:'#02071a', 
 			is3D: 'true',
 			width: 800,

@@ -3,7 +3,7 @@
 
     $con=mysql_connect("localhost","root","");
 	$user= $_SESSION['userid'];
-	$sth = mysql_query("SELECT Price, Category FROM user.transaction WHERE ID_USERS = :userid");
+	$sth = mysql_query("SELECT Price, Category FROM user.transaction");
 
 	$rows = array();
 	$table = array();

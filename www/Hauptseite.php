@@ -12,6 +12,7 @@
 		<meta name="author" content="Shopayltics-Team"/>
 		<link rel="stylesheet" type="text/css" href="../style/Hauptseite.css"/>
 		<link rel="stylesheet" type="text/css" href="../style/General.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/chart.css"/>
 		
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -21,7 +22,7 @@
 	<header>
 		<div id="welcome" class="text">Herzlich Willkommen: <a href="Benutzerverwaltung.php"><?php echo $user_check ?></a></div>
 		
-		<a href="https://www.google.de/?gws_rd=ssl">
+		<a href="includes/logout.php">
 			<img id = "logout" class="icon" src="../graphic/icons/logout.png" title="Logout"/>
 		</a>
 		<a href="Benutzerverwaltung.php">
@@ -35,6 +36,8 @@
 	</header>
 	
 	<body>
+	<div id="chart_div"> </div>
+		
 	</body>
 	<footer>
 		<a href="../Verlinkungen/Impressum.html">Impressum</a> | 
