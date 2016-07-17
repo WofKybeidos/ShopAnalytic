@@ -11,12 +11,11 @@
 	</head>
 
 	<header>
-		<a href="../Start.php"><img id = "logo" src="../graphic/logos/Shopanalytics.png"></a>
+		<a href="../www/Start.php"><img src="../graphic/logos/Shopanalytics.png"></a>
+		<h2>Kontaktformular</h2>
 	</header>
 
 	<body>
-		<?php include("Kontakt.php"); ?>
-		<h2>Kontaktformular</h2>
 		<form method="post" name="Kontakt">
 			<fieldset>
 				<input type="text" name="name" id="name" placeholder="Ihr Name" value="" 
@@ -28,8 +27,7 @@
 				<input type="tel" name="number" id="number" placeholder="Ihre Telefonnummer" value= "" 
 				autocomplete="on" autocorrect="off" required>
 				<br/>
-				<input type="text" name="name" id="message" placeholder="Ihre Nachricht" value="" > 
-				<!-- <textarea name="message" id="message" placeholder="Ihre Nachricht" value= ""></textarea> -->
+				<textarea name="message" id="message" placeholder="Ihre Nachricht" value= ""></textarea>
 				<br/>
 				<input type="submit" id="submit" title="Abschicken" value="Abschicken" disabled="disabled"/>
 			</fieldset>
@@ -37,6 +35,6 @@
 	</body>
 	
 	<footer>
-		Zur&uuml;ck zur Startseite: <a href="../../Login.html">Hier klicken</a>
+		<p>Zur&uuml;ck zur Startseite: <a href="../www/Start.php">Hier klicken</a></p>
 	</footer>
 </html>
