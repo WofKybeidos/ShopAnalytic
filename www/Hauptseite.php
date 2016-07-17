@@ -19,7 +19,7 @@
 	</head>
 	
 	<header>
-		<div class="text">Herzlich Willkommen: <a href="Benutzerverwaltung.php"><?php echo $user_check ?></a></div>
+		<div id="welcome" class="text">Herzlich Willkommen: <a href="Benutzerverwaltung.php"><?php echo $user_check ?></a></div>
 		
 		<a href="https://www.google.de/?gws_rd=ssl">
 			<img id = "logout" class="icon" src="../graphic/icons/logout.png" title="Logout"/>
