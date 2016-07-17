@@ -15,8 +15,8 @@
 	</head>
 
 	<header>
+		<a href="../www/Start.php"><img src="../graphic/logos/Shopanalytics.png"></a>
 		<h2>Benutzerverwaltung</h2>
-		<a href="../../Login.html"><img src="../../graphic/logos/Shopanalytics.png"></a>
 	</header>
 
 	<body>
@@ -32,7 +32,7 @@
 					<label for="PwBestaetigen">
 						Passwort Bestaetigen: <input type="password" name="passwordNew2" id="bPw" placeholder="">
 					</label>
-						<input type="submit" id="changePw" title="Speichern" value="Speichern"/>
+						<input class="Button" type="submit" id="changePw" title="Speichern" value="Speichern"/>
 			</fieldset>
 		</form>
 		
@@ -51,11 +51,14 @@
 					<label for="AktuellesPw">
 						Aktuelles Passwort: <input type="password" name="password" id="aPw" placeholder="">
 					</label>
-						<input type="submit" id="changeE-mail" title="Speichern" value="Speichern"/>
+						<input class="Button" type="submit" id="changeE-mail" title="Speichern" value="Speichern"/>
 			</fieldset>
 		</form>
 	</body>
 	
 	<footer>
+		<a href="../Verlinkungen/Impressum.html">Impressum</a> | 
+		<a href="../Verlinkungen/Datenschutz.html">Datenschutzbestimmungen</a> | 
+		<a href="../Verlinkungen/Kontakt.html">Kontakt</a>
 	</footer>
 </html>
