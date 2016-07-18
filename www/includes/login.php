@@ -15,7 +15,7 @@ if(isset($_GET['login'])) {
 		$_SESSION['email'] = $user['email'];
 		header("location: Hauptseite.php");
 	} else {
-		$errorMessage = "E-Mail oder Passwort war ungueltig<br>";
+		$errorMessage = "<script type='text/javascript'>alert('E-Mail oder Passwort war ungueltig');</script>";
 	}
 }
 if(isset($errorMessage)) {

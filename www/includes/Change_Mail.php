@@ -11,7 +11,7 @@ if(isset($_GET['changeMail'])) {
 	
 
 	if($emailNew != $emailNew2) {
-		echo 'Die neuen E-Mail adressen stimmen nicht &uuml;berein<br>';
+		echo "<script type='text/javascript'>alert('Die nuen E-Mail-Adressen stimmen nicht überein');</script>";
 		$error = true;
 	}
 	
@@ -21,7 +21,7 @@ if(isset($_GET['changeMail'])) {
 		$user = $stmt->fetch();
 		
 		if($user !== false) {
-			echo 'Diese E-Mail-Adresse ist bereits vergeben<br>';
+			echo "<script type='text/javascript'>alert('Diese E-Mail wird bereits Verwendet');</script>";
 			$error = true;
 		}	
 	}
@@ -36,13 +36,13 @@ if(isset($_GET['changeMail'])) {
 			$result = $stmt->execute(array('emailNew' => $emailNew, 'email' => $email));
 			
 			if($result) {		
-				echo 'E-Mail erfolgreich geändert';
+				echo "<script type='text/javascript'>alert('E-Mail erfolgreich geändert');</script>";
 				$showFormular = false;
 			} else {
-				echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+				echo "<script type='text/javascript'>alert('Fehler beim Speichern');</script>";
 			} 
 		} else {
-			echo 'Ihr aktuelles Passwort war nicht Korrekt';
+			echo "<script type='text/javascript'>alert('Passwort war ungueltig');</script>";
 			}
 	}
 }	

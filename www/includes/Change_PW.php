@@ -11,9 +11,9 @@ if(isset($_GET['changePW'])) {
 	
 
 	if($passwordNew != $passwordNew2) {
-		echo 'Die neuen Passwörter stimmen nicht überein<br>';
+		echo echo "<script type='text/javascript'>alert('Die neuen Passwörter stimmen nicht überein');</script>";
 		$error = true;
-	}
+	} 
 	
 	if(!$error) {
 		$stmt = $pdo->prepare("SELECT * FROM user.users WHERE email = :mail");
@@ -30,10 +30,10 @@ if(isset($_GET['changePW'])) {
 				echo 'Passwort erfolgreich geändert';
 				$showFormular = false;
 			} else {
-				echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
+				echo "<script type='text/javascript'>alert('Beim Abspeichern ist leider ein Fehler aufgetreten');</script>";
 			} 
 		} else {
-			echo 'Ihr aktuelles Passwort war nicht Korrekt';
+			echo "<script type='text/javascript'>alert('Ihr aktuelles Passwort war nicht Korrekt');</script>";
 			}
 	}
 }	
