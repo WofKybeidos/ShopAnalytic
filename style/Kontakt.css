@@ -1,15 +1,20 @@
+/* Hier wird die Überschrift (h2) auf mittig gesetzt */
 h2{
 	text-align:center;
 }
 
+/* Der Rahmen des fieldsets wird auf 0px gesetzt */ 
 fieldset{
 	border: 0px;
 }
 
+/* In dem Form-Element wird der Text mittig zentriert */
 form{
     text-align: center;
 }
 
+/* Hier werden die 3 Inputfelder (Name, Email und Telefonnummer) gleich definiert. Die Größe des Anzeigetextest beträgt 20px, 
+der Innenabstand (Oben, Unzen, Links und Rechts) wird durch die 4 Zahlen im padding festgelegt. Außerdem wird die Breite auf 20% der Seite definiert*/
 input[type="text"],
 input[type="email"],
 input[type="tel"]{
@@ -18,19 +23,28 @@ input[type="tel"]{
 	width:20%;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #name definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. Des Weiteren wird der Rahmen des Feldes oben abgerundet */
 #name{
 	background: url(../graphic/icons/users.png) no-repeat 12px 12px #fff;
 	border-radius:6px 6px 0px 0px;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #mail definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. */
 #mail{
 	background: url(../graphic/icons/mail.png) no-repeat 12px 12px #fff;
 }
 
+/* Genau wie bei #mail */
 #number{
 	background: url(../graphic/icons/phone.png) no-repeat 12px 12px #fff;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #message definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des 
+Feldes festgelegt und die Farbe der Grafik bestimmt. Des Weiteren wird der Rahmen des Feldes unten abgerundet, die automatische Größenanpassung 
+unterdrückt. Außerdem werden hier die Paramter wie oben bei den 3 Inputfeldern abgehandelt, da es sich deutlich von den 3 oben unterscheidet und deshalb
+hier separat behandelt wird */
 #message{
 	background: url(../graphic/icons/pencil.png) no-repeat 12px 12px #fff;
 	border-radius:0px 0px 6px 6px;
@@ -42,6 +56,8 @@ input[type="tel"]{
 	height:150px;
 }
 
+/* Hier werden alle Eigenschaften des Button abgehandelt. Dabei wird aud die Höhe, Breite, Schriftgröße, Schatten, Farbe, Rahmen, Ausrichtung usw. 
+eingagangen */
 input[type="submit"]{
   margin-top:20px;
   width: 150px;
