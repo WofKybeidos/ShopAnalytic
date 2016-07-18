@@ -1,19 +1,27 @@
+/* In der General.css Datei werden alle allgemeinen Einstellungen wie Schriftart,- farbe, Hintergrundfarbe, Ausrichtung des Logos und der Footer definiert */
+
+/* Sämtliche Texte, Überschriften usw. wird eine einheitliche Farbe und Schriftart zugewiesen*/
 p, a, h1, h2, h3, h4, td, .text{
 	color: white;
 	font-family: arial;
 }
 
+/* Hier wird die Hintergrundfarbe des Bodys allgemein festgelegt und der margin (Außenabstand) auf 0 gesetzt */
 body {
 	background-color:#02071a;
 	margin:0;
 }
 
+/* Definiert, wie das Logo aussieht (Größe, Außenabstand und Display Block-Box (Gesamte Breite des Elternelements, so hoch wie der Inhalt) */
 img {
 	width:250px;
 	margin: 0 auto;
 	display:block;
 }
 
+/* Der Footer soll auf jeder Seite unten am Rand feststehen sein. Zur Ausrichtung ist er am Rand unten fixiert (Bottom: 0%), und die Position ist fix.
+Außerdem geht er über die ganze Seite (width: 100%) und ist bei der Höhe auf 2.5 em definiert. Der Hintergrund ist genau wie der Header schwarz gehalten,
+damit er sich vom Body abhebt. Die Textausrichtung ist zentirert und die Schriftfarbe weiß. */
 footer {
 	bottom:0%;
 	position:fixed;
