@@ -1,3 +1,5 @@
+/* Hier wird der Header der Hauptseite festgelegt. Die Breite liegt bei 100%, damit der Header die komplette Seite ausfüllt, die Höhe beträgt 5em.
+Die Hintergrundfarbe ist schwarz, damit sie sich vom Body-teil abhebt. Der Text ist rechts ausgerichtet und die Schriftfarbe ist weiß */
 header{
 	width: 100%;
 	height: 5em;
@@ -5,6 +7,8 @@ header{
 	text-align: left;
 	color: white;
 }
+
+/* In der .icon Klasse werden die Icons des Header auf der Hauptseite ausgerichtet und Einheitlich definiert (Breite, Höhe, Rahmen, Position) */ 
 .icon{
 	padding-top:20px;
 	width:32px;
@@ -12,17 +16,21 @@ header{
 	margin-right:20px;
 }
 
+/* Im Welcome-Div wird der padding (Innenabstand) auf 10px gesetzt und das Display auf inline-block, damit die Laufrichtung des Textes passt*/
 #welcome{
 	padding: 10px;
 	display:inline-block;
 }
 
+/* Im Chart_div wird der Bereich für das Auswertungschart festgelegt und definert. Das Display-Block nimmt die gesamte Breite des Inhaltes ein, die 
+Breite ist mit 800px fest definiert. Das margin (Außenabstand) ist auf auto gesetzt, damit der Abstand automatisch auf die richtige Breite angepasst wird */
 div#chart_div{
 	display:block;
 	width:800px;
 	margin: auto;
 }
 
+/* Hier wird die Image Komponente, in dem Fall das Logo für die Seite definiert. Es ist 100px breit und links an der Seite ausgerichtet*/
 img#logo{
 	width:100px;
 	display:inline-block;
