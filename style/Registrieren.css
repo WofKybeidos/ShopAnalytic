@@ -1,20 +1,27 @@
+/* Hier wird die Höhe und Breite des Headers festgelegt. Außerdem wird der obere Außenabstand auf 20px gesetzt */
 #header{
 	width: 100%;
 	height: 200px;
 	margin-bottom:20px;
 }
+
+/* Hier wird die Testausrichtung der Überschrift (h1) auf mittig gesetzt */
 h1{
 	text-align:center;
 }
 
+/* Der Rahmen des fieldsets wird auf 0px gesetzt */ 
 fieldset{
 	border: 0px;
 }
 
+/* In dem Form-Element wird der Text mittig zentriert */
 form{
     text-align: center;
 }
 
+/* Hier werden die 4 Inputfelder (Name, Telefonnumer, Email und Passwort) gleich definiert. Die Größe des Anzeigetextest beträgt 20px, 
+der Innenabstand (Oben, Unten, Links und Rechts) wird durch die 4 Zahlen im padding festgelegt. */
 input[type="text"],
 input[type="tel"],
 input[type="email"],
@@ -23,28 +30,38 @@ input[type="password"]{
 	padding: 15px 15px 15px 60px;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #firstname definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. Des Weiteren wird der Rahmen des Feldes oben abgerundet */
 #firstname{
 	background: url(../graphic/icons/user.png) no-repeat 12px 12px #fff;
 	border-radius:6px 6px 0px 0px;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #mail definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. */
 #lastname{
 	background: url(../graphic/icons/user.png) no-repeat 12px 12px #fff;
 }
 
+/* Genau wie bei #lastname */
 .mail{
 	background: url(../graphic/icons/mail.png) no-repeat 12px 12px #fff;
 }
 
+/* Genau wie bei .mail */
 #password{
 	background: url(../graphic/icons/key.png) no-repeat 12px 12px #fff;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #password2 definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. Des Weiteren wird der Rahmen des Feldes unten abgerundet */
 #password2{
 	background: url(../graphic/icons/key.png) no-repeat 12px 12px #fff;
 	border-radius:0px 0px 6px 6px;
 }
 
+/* Hier werden alle Eigenschaften des Button abgehandelt. Dabei wird aud die Höhe, Breite, Schriftgröße, Schatten, Farbe, Rahmen, Ausrichtung usw. 
+eingagangen */
 input[type="submit"]{
   margin-top:20px;
   width: 150px;
