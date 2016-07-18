@@ -1,33 +1,44 @@
+/* Hier wird die Höhe und Breite des Headers festgelegt. Außerdem wird der obere Außenabstand auf 100px gesetzt */
 header{
 	width:100%;
 	height:200px;
 	margin-top:100px;
 }
 
+/* Der Rahmen des fieldsets wird auf 0px gesetzt */ 
 fieldset{
 	border: 0px;
 }
 
+/* In dem Form-Element wird der Text mittig zentriert */
 form{
     text-align: center;
 }
 
+/* Hier werden die 2 Inputfelder (Email und Passwort) gleich definiert. Die Größe des Anzeigetextest beträgt 20px, 
+der Innenabstand (Oben, Unten, Links und Rechts) wird durch die 4 Zahlen im padding festgelegt. */
 input[type="email"],
 input[type="password"] {
 	font-size:20px;
 	padding: 15px 15px 15px 60px;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #email definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. Des Weiteren wird der Rahmen des Feldes oben abgerundet */
 #email{
 	background: url(../graphic/icons/users.png) no-repeat 12px 12px #fff;
 	border-radius:6px 6px 0px 0px;
 }
 
+/* Hier wird die Grafik des Inputfelds mit der ID #pasword definiert. Es wird auf den Speicherort der Grafik verwiesen, die Ausrichtung innerhalb des Feldes
+festgelegt und die Farbe der Grafik bestimmt. Des Weiteren wird der Rahmen des Feldes unten abgerundet */
 #password{
 	background: url(../graphic/icons/key.png) no-repeat 12px 12px #fff;
 	border-radius:0px 0px 6px 6px;
 }
 
+/* Hier werden alle Eigenschaften de Button abgehandelt. Dabei wird aud die Höhe, Breite, Schriftgröße, Schatten, Farbe, Rahmen, Ausrichtung usw. 
+eingagangen */
 .Button{
   margin-top:20px;
   width: 150px;
@@ -43,7 +54,6 @@ input[type="password"] {
   -webkit-box-shadow: inset 0 -2px #22303f;
   box-shadow: inset 0 -2px #22303f;
 }
-
 input[type="submit"] :hoover {
   top: 1px;
   outline: none;
@@ -51,6 +61,8 @@ input[type="submit"] :hoover {
   box-shadow: none;
 }
 
+/* Hier wird der Link Passwort vergessen definiert. Die Farbe wird auf weiß gesetzt, die Textausrichtung mittig, der Rand auf 0 gesetzt und die 
+Ausrichtung auf der auf 250px gesetzt */
 #PwVergessen
 {
 	color: #FFFFFF;
@@ -60,6 +72,8 @@ input[type="submit"] :hoover {
 	width: 250px;
 }
 
+/* Hier wird der Link hinter dem Registrierenbutton behandelt. die Farbe wird auf weiß gesetzt. Das Text-decoration wird auf none gesetzt damit 
+Unterstrich des Links nicht angezeigt wird */
 #Registrieren
 {
 	color: #FFFFFF;
