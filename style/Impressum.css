@@ -1,12 +1,16 @@
+/* Hier wird die Schriftwart der Überschrift (h4) auf Fett gesetzt */
 h4{
 	font-weight: bold;
 }
 
+/* Hier wird das Logo für die Seite definiert. Es ist 200px breit und rechts an der Seite ausgerichtet*/
 #logo {
 	width: 200px;
 	display:inline-block;
 	float:right;
 }
+
+/* Der Text des Body Elementes ist mittig Ausgerichtet */
 body{
 	text-align:center;
 }
