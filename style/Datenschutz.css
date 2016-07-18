@@ -1,3 +1,4 @@
+/* Rahmen um den gesamten Text, Überschriften, damit etwas Abstand zum Rand ist */
 h2, h4, p{
 	padding-left:25px;
 	padding-right:25px;
