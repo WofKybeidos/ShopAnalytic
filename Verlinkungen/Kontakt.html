@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Für Google optimierte Suchkriterien mit Seitenrelevanten Informationen und Beschreibung -->
 		<title>Kontakt Shopalytics</title>
 		<meta name="description" content="Contact from Shopalytics Webapplication"/>
 		<meta name="language" content="de"/>
 		<meta name="keywords" content="Contact Shopalytics Online Shopping"/>
 		<meta name="author" content="Shopayltics-Team"/>
+		<!-- Einbindung der Css-Dateien. Einmal die spezifische für die Kontaktseite und die Generall.css in dem Allgemeine Paramter abgehandelt werden -->
 		<link rel="stylesheet" type="text/css" href="../style/Kontakt.css"/>
 		<link rel="stylesheet" type="text/css" href="../style/General.css"/>
 	</head>
 
 	<header>
+		<!-- Einbindung des Logos im Header und Hinterlegung des Links zurück zur Startseite, damit man bei einem Klick aufs Bild zurück gelangt -->
 		<a href="../www/Start.php"><img src="../graphic/logos/Shopanalytics.png"></a>
+		<!-- Überschrift (h2) die oben auf der Seite im Header angezeigt wird -->
 		<h2>Kontaktformular</h2>
 	</header>
 
 	<body>
+		<!-- Definierung des Kontaktprozesses im Fieldset mit den benötigten Feldern (Name, Mail, Nummer und Nachricht) und Übergabe der Werte an 
+		das dementsprechende PHP und die dazugehörigen Links -->	
 		<form method="post" name="Kontakt">
 			<fieldset>
+				<!-- Definition eines Inputfeldes mit dem Typ Text, dem Name & ID "name", da hier der Name eingetragen werden soll. 
+				Der Anzeigetext ist "Ihr name" und leerem Wert. Der Autofocus für das Feld ist eingeschaltet, die Autokorrektur aus (da es nicht sinvoll wäre den Name zu korrigieren) -->
 				<input type="text" name="name" id="name" placeholder="Ihr Name" value="" 
 				autofocus autocomplete="on" autocorrect="off" required> 
 				<br/>
+				<!-- Ähnlich zu oben -->
 				<input type="email" name="e-mail" id="mail" placeholder="Ihre E-Mail Adresse" value= "" 
 				autocomplete="on" autocorrect="off" required>
 				<br/>
+				<!-- Ähnlich zu oben -->
 				<input type="tel" name="number" id="number" placeholder="Ihre Telefonnummer" value= "" 
 				autocomplete="on" autocorrect="off" required>
 				<br/>
+				<!-- Hier wird eine Textarea festgelegt, da im Kontaktformular eine Nachricht eingegeben werden kann / soll. Der Anzeigetext ist "Ihre 
+				Nachricht", der Wert ist leer -->
 				<textarea name="message" id="message" placeholder="Ihre Nachricht" value= ""></textarea>
 				<br/>
+				<!-- Ein Button, der das ausgefüllte Kontaktformular abschickt, sobald man den Button betätigt. -->
 				<input type="submit" id="submit" title="Abschicken" value="Abschicken" disabled="disabled"/>
 			</fieldset>
 		</form>
@@ -36,6 +49,7 @@
 	<br>
 	</body>
 	
+	<!-- Definierung des Footers mit dem Link zurück zur Startseite, damit man direkt zurückspringen kann -->
 	<footer>
 		<p>Zur&uuml;ck zur Startseite: <a href="../www/Start.php">Hier klicken</a></p>
 	</footer>
