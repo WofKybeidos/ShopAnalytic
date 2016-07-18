@@ -1,3 +1,4 @@
+/* Hier wird definiert wie Hoch, Breit und mit welcher Stärke der Rand des Header sein soll  */
 #header{
 	width: 100%;
 	height: 1px;
@@ -5,41 +6,51 @@
 	margin-bottom:20px;
 }
 
+/* Festlegen, welche Farbe die Überschrift H2 hat und zentrale Ausrichtung des Textes */
 h2{
 	color: white;
 	text-align: center;
 }
 
+/* Hintergrundfarbe des Fildsets ist die selbe wie die der Webseite, damit das Design einheitlich ist. 
+Außerdem ist der padding (Innenabstand) mit 10px angegeben, damit zu den Feldern ein gewisser Abstand besteht */
 fieldset {
 	background: #00000;
 	padding: 10px;
 }
 
+/* Definierung der Legende mit margin (Außenabstand), Fette Schrift und weißer Schriftfarbe */
 legend {
 	margin-top: 1px;
 	font-weight: bold;
 	color: white;
 }
 
+/* Hier wird der Text des Labels definiert. Dabei wird auf die Position, Abstand, Rahmen, Farbe etc. eingegangen */
 label {
 	display: block;
 	margin: 10px;
 	position: relative;
 	color: white;
 	border:0px;
-	
 }
+
+/* In dem Form-Element wird der äußere Rahmen und die Komponenten definiert */
 form{
 	display:block;
 	width:35%;
 	margin: 0 auto;
 }
 
+/*  Für das Input Feld für die Eingaben wird die Breite definiert, die Ausrichtung rechts neben dem Text 
+erzeugen der Inline-Boxen zur Verlaufrichtung des Textes */
 input{
 	width:50%;
 	display:inline;
 	float:right;
 }
+
+/* Zusammenfassung der Legende und des Labels, da die Farbe und die Schriftart bei beiden gleich gesetzt wird*/
 legend, label{
 	color:'white';
 	font-family:Arial;
