@@ -10,6 +10,7 @@
 		<meta name="language" content="de"/>
 		<meta name="keywords" content="Login Shopalytics Online Shopping"/>
 		<meta name="author" content="Shopayltics-Team"/>
+		<!-- Einbindung der Css-Dateien. Einmal die spezifische für die Loginseite und die Generall.css in dem Allgemeine Paramter abgehandelt werden -->
 		<link rel="stylesheet" type="text/css" href="../style/Login.css"/>
 		<link rel="stylesheet" type="text/css" href="../style/General.css"/>
 	</head>
@@ -24,13 +25,18 @@
 		das dementsprechende PHP und die dazugehörigen Links -->	
 		<form method="post" name="login" action="?login=1">
 			<fieldset>
+			<!-- Definition eines Inputfeldes mit dem Typ Email, dem Name & ID "email", da hier die Emailadresse eingetragen werden soll. 
+				Der Anzeigetext ist "E-Mail Adresse". Der Autofocus für das Feld ist eingeschaltet, die Autokorrektur aus -->
 				<input type="email" name="email" id="email" placeholder="E-Mail-Adresse" autocomplete="on" autocorrect="off" required>  
 				<br/>
+				<!-- Ähnlich wie oben -->
 				<input type="password" name="password" id="password" placeholder="Passwort" autocomplete="on" autocorrect="off" required>
 				<br/>
+				<!-- Hier ist ein Registierungsbutton definiert, bei dem der Link zu der dazugehörigen Seite enthält -->
 				<a id = "Registrieren" href="Registrieren.php">
 					<input type="button" class="Button" title="Neuanmeldung" value="Registrieren"/>
 				</a>
+				<!-- Hier wird der Einloggbutton definiert. Das erfolgreiche einloggen ist erst bei richtiger Eingabe der beidne Felder möglich -->
 				<input type="submit" class="Button" title="Einloggen" value="Einloggen"/>
 			</fieldset>
 		</form>
