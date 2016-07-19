@@ -1,10 +1,12 @@
 <?php
 	session_start();
-
+	
+	//Auswahl von auszuwertender Kategorie und dem zugehörigen Preis der Tabelle "transaction"
     $con=mysql_connect("localhost","root","");
 	$user= $_SESSION['userid'];
 	$sth = mysql_query("SELECT Price, Category FROM user.transaction");
 
+	//Labes werden definiert
 	$rows = array();
 	$table = array();
 	$table['cols'] = array(
@@ -14,6 +16,7 @@
 	
 	$rows = array();
 	
+	//befüllen des Arrays, für die Graphische Darstellung mit Google-Charts (JSON-Tables)
 	while($r = mysql_fetch_assoc($sth)) {
 		$temp = array();
 		$temp[] = array('v' => (string) $r['Category']);    
@@ -21,6 +24,7 @@
 		$rows[] = array('c' => $temp);
 	}
 	
+	//umwandlung in JSON format
 	$table['rows'] = $rows;
 	$jsonTable = json_encode($table);
 	echo $jsonTable;
